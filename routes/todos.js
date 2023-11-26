@@ -2,8 +2,8 @@ const express = require("express");
 
 const router = express.Router();
 
-let todoId = 0;
-let todos = [];
+let todoId = 1;
+let todos = [{ id: 1, title: "🧹 청소하기", isDone: false }];
 
 // To do 생성
 router.post("/", (req, res) => {
